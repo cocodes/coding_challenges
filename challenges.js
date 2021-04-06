@@ -28,4 +28,11 @@ function quadrupleAdd(num1) {
 
 quadrupleAdd(10)(20)(30, 40);
 
-// Day 2 -
+// Day 2 - IIFE
+
+//1. What is an IIFE and why are they used?
+//2. Code out an Example IIFE that functions properly
+
+(function doubleNumber(num) {
+  return num * 2;
+})(10);
