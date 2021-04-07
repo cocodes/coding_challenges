@@ -47,4 +47,19 @@ quadrupleAdd(10)(20)(30, 40);
   if (true) console.log("hello world");
 })();
 
-// Day 3 -
+// Day 3 - Button
+// Refer to jsbin project to function
+
+function createButtons() {
+  for (var i = 1; i <= 5; i++) {
+    var body = document.getElementsByTagName("BODY")[0];
+    var button = document.createElement("BUTTON");
+    button.innerHTML = "Button " + i;
+    button.onclick = function () {
+      alert("This is button " + i);
+    };
+    body.appendChild(button);
+  }
+}
+
+createButtons();
