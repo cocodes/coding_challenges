@@ -24,17 +24,17 @@ class Solution:
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-		maxarea = 0
-		l = 0
-		r = len(height)-1
+	    maxarea = 0
+	    l = 0
+	    r = len(height)-1
 
-		while(l<r):
-			maxarea = max(maxarea, min(height[l],height[r])*(r-l))
-			if(height[l]<height[r]):
-				l+=1
-			else:
-				r-=1
-		return maxarea
+	    while(l<r):
+		    maxarea = max(maxarea, min(height[l],height[r])*(r-l))
+		    if(height[l]<height[r]):
+			    l+=1
+		    else:
+			    r-=1
+	    return maxarea
 
 # Day 6 - Longest substring without repeating characters
 # Given a string s, find the length of the longest substring without repeating characters.
@@ -68,4 +68,8 @@ class Solution:
 
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        
+        currentSum = sum(nums)
+        n = len(nums)
+        intendedSum = n*(n+1)/2
+
+        return int(intendedSum-currentSum)
