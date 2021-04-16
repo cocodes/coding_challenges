@@ -22,19 +22,19 @@ class Solution:
 # Day 5 - Container With Most Water
 # Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
 
-class Solution:
-    def maxArea(self, height: List[int]) -> int:
-	    maxarea = 0
-	    l = 0
-	    r = len(height)-1
+# class Solution:
+#     def maxArea(self, height: List[int]) -> int:
+# 	    maxarea = 0
+# 	    l = 0
+# 	    r = len(height)-1
 
-	    while(l<r):
-		    maxarea = max(maxarea, min(height[l],height[r])*(r-l))
-		    if(height[l]<height[r]):
-			    l+=1
-		    else:
-			    r-=1
-	    return maxarea
+# 	    while(l<r):
+# 		    maxarea = max(maxarea, min(height[l],height[r])*(r-l))
+# 		    if(height[l]<height[r]):
+# 			    l+=1
+# 		    else:
+# 			    r-=1
+# 	    return maxarea
 
 # Day 6 - Longest substring without repeating characters
 # Given a string s, find the length of the longest substring without repeating characters.
@@ -94,7 +94,8 @@ class Solution:
 
 # Day 10 - Single Number
 
-#Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+# Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
+        return 2*sum(set(nums))-sum(nums)
