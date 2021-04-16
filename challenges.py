@@ -91,3 +91,10 @@ class Solution:
                     isPrime[multiples_of_i] = False
         
         return sum(isPrime)
+
+# Day 10 - Single Number
+
+#Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
