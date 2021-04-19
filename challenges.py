@@ -99,3 +99,10 @@ class Solution:
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         return 2*sum(set(nums))-sum(nums)
+
+
+# Day 11 - House Robber
+
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        
