@@ -106,3 +106,8 @@ class Solution:
 class Solution:
     def rob(self, nums: List[int]) -> int:
         
+
+# Day 12 - Best time to buy and sell stock
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
