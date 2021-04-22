@@ -126,13 +126,10 @@ class Solution:
 class MinStack:
 
     def __init__(self):
-        """
-        initialize your data structure here.
-        """
-        
+        self.st = []
 
     def push(self, val: int) -> None:
-        
+        curMin = self.genMin()
 
     def pop(self) -> None:
         
@@ -150,3 +147,9 @@ class MinStack:
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
+
+# Day 15 - Subsets
+
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        
