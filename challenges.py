@@ -149,7 +149,24 @@ class MinStack:
 # param_4 = obj.getMin()
 
 # Day 15 - Subsets
+# Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+# The solution set must not contain duplicate subsets. Return the solution in any order.
 
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
+
+# Day 16 - First bad version
+
+# The isBadVersion API is already defined for you.
+# @param version, an integer
+# @return an integer
+# def isBadVersion(version):
+
+class Solution:
+    def firstBadVersion(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
         
