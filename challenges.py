@@ -170,3 +170,9 @@ class Solution:
         :rtype: int
         """
         
+
+# Day 17 - Valid Parentheses
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        
