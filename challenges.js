@@ -1,22 +1,23 @@
-// JavaScript prep questions
-// Question 1 - Triple Add Function
-// Write a function that returns total of all 3 numbers added together
-// Curried version
+// Code Wars challenges. 8Kyu difficutly
+// Easy Challanges that I can solve in other languages as well
 
-function tripleAdd(num1) {
-  return function (num2) {
-    return function (num3) {
-      return num1 + num2 + num3;
-    };
-  };
+// Challenge 1 - Convert a Number to a String!
+function numberToString(num) {
+  const newString = num.toString();
+  return newString;
 }
 
-console.log(tripleAdd(10)(20)(30)); // returns 60
+console.log(numberToString(67));
 
-// Day 2 - IIFE
+// Challange 2 - Convert Boolean values to strings 'Yes' or 'No'.
 
-//1. What is an IIFE and why are they used?
-//2. Code out an Example IIFE that functions properly
+function boolToWord(bool) {
+  if (bool === true) {
+    return "Yes";
+  } else {
+    return "No";
+  }
+}
 
-// Day 3 - Button
-// Refer to jsbin project to function
+console.log(boolToWord(true));
+console.log(boolToWord(false));
